@@ -1,7 +1,7 @@
 body{
     background-color: #d95550;
-    height: 3000px;
     font-family: arial;
+    margin: 0;
 }
 main{
     display: flex;
