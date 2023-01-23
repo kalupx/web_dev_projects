@@ -1,5 +1,6 @@
 var min = null, sec = null, tmp = null;
 function preparaTimer(){
+    document.getElementById('start-btn-title').innerText = "PAUSE"
     clearInterval(tmp);
     var time = document.getElementById('timer').innerText;
     min = parseInt(time.substring(0,2));
@@ -10,10 +11,12 @@ function preparaTimer(){
 function timer(){
     sec--;
     if(sec === 0){
-        sec = 9;
+        sec = 15;
         min--;
     }
     if(sec < 10){
         document.getElementById('timer').innerText = min + ":0" + sec;
+    }else{
+        document.getElementById('timer').innerText = min + ":" + sec;
     }
 }
