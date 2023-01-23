@@ -1,15 +1,19 @@
-function startTimer(){
-    //pega os valores e os salva em variaveis diferentes
-    var min = document.getElementById('timer').innerText;
-    var sec = document.getElementById('timer').innerText;
-    sec = min.substring(3,5);
-    min = min.substring(0,2);
-    
-    //faz o casting dos valores
-    sec = parseInt(sec);
-    min = parseInt(min);
+var min = null, sec = null, tmp = null;
+function preparaTimer(){
+    clearInterval(tmp);
+    var time = document.getElementById('timer').innerText;
+    min = parseInt(time.substring(0,2));
+    sec = parseInt(time.substring(3,5));
+    tmp = setInterval(timer, 1000);
+}
+
+function timer(){
+    sec--;
     if(sec === 0){
-        sec = 10;
+        sec = 9;
+        min--;
     }
-    alert(sec)
+    if(sec < 10){
+        document.getElementById('timer').innerText = min + ":0" + sec;
+    }
 }
