@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/tasks.css">
     <link rel="stylesheet" href="styles/footer.css">
     <!--scripts-->
-    <script type="text/javascript" src="js/meu-arquivo.js"></script>
+    <script type="text/javascript" src="script/timer_script.js"></script>
 </head>
 <body>
     <main>
@@ -66,10 +66,10 @@
                 </div>
             </div>
             <div class="clock">
-                <p>45:00</p>
+                <p id="timer">45:00</p>
             </div>
             <div class="start">
-                <button class="start-button">
+                <button id="start-button" onclick="startTimer()">
                     <p>START</p>
                 </button>
             </div>
