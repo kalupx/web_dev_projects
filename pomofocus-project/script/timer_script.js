@@ -1,11 +1,18 @@
-var min = null, sec = null, tmp = null;
+var min = null, sec = null, tmp = null, pause = false;
 function preparaTimer(){
-    document.getElementById('start-btn-title').innerText = "PAUSE"
-    clearInterval(tmp);
-    var time = document.getElementById('timer').innerText;
-    min = parseInt(time.substring(0,2));
-    sec = parseInt(time.substring(3,5));
-    tmp = setInterval(timer, 1000);
+    if(!pause){
+        pause = true;
+        document.getElementById('start-btn-title').innerText = "PAUSE"
+        clearInterval(tmp);
+        var time = document.getElementById('timer').innerText;
+        min = parseInt(time.substring(0,2));
+        sec = parseInt(time.substring(3,5));
+        tmp = setInterval(timer, 1000);
+    }else if(pause){
+        pause = false;
+        document.getElementById('start-btn-title').innerText = "START";
+        clearInterval(tmp);
+    }
 }
 
 function timer(){
