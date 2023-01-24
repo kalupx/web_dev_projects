@@ -18,6 +18,11 @@ function preparaTimer(){
 function timer(){
     sec--;
     if(sec <= 0){
+        if(min == 0){
+            clearInterval(tmp);
+            document.getElementById('timer').innerText = "00:00";
+            return;
+        }
         sec = 5;
         min--;
     }
@@ -43,7 +48,7 @@ function activeChange(buttonType){
             document.getElementById('timer').innerText = '45:00'
             break;
         case 'short-break-id':
-            document.getElementById('timer').innerText = '05:00'
+            document.getElementById('timer').innerText = '03:00'
             break;
         case 'long-break-id':
             document.getElementById('timer').innerText = '15:00'
