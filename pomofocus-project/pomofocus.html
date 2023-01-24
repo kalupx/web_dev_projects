@@ -50,17 +50,17 @@
         <div class="timer">
             <div class="breaks">
                 <div class="pomodoro">
-                    <button class="pomodoro-button">
-                        Pomodoro
+                    <button class="active-btn" onclick="activeChange('pomodoro-id')" id="pomodoro-id">
+                        Pomodoros
                     </button>
                 </div>
                 <div class="short-break">
-                    <button class="short-break-button" id="short-break-id" onclick="functionBreak('short')">
+                    <button class="inactive-btn" onclick="activeChange('short-break-id')" id="short-break-id">
                         Short Break
                     </button>
                 </div>
                 <div class="long-break">
-                    <button class="long-break-button" id="long-break-id" onclick="functionBreak('long')">
+                    <button class="inactive-btn" onclick="activeChange('long-break-id')" id="long-break-id">
                         Long Break
                     </button>
                 </div>

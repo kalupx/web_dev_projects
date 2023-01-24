@@ -28,6 +28,9 @@ function timer(){
     }
 }
 
-function functionBreak(break_tipe){
-    alert(break_tipe);
+function activeChange(buttonType){
+    document.getElementById('pomodoro-id').className = 'inactive-btn';
+    document.getElementById('short-break-id').className = 'inactive-btn';
+    document.getElementById('long-break-id').className = 'inactive-btn';
+    document.getElementById(buttonType).className = 'active-btn';
 }

@@ -31,11 +31,10 @@
     text-align: center;
     font-weight: 600;
 }
-.short-break-button,
-.long-break-button{
+.inactive-btn{
     background-color: #E17773;
 }
-.pomodoro-button{
+.active-btn{
     background-color: #d95550;
 }
 /*------------clock------------*/
