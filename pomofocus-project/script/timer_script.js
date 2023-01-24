@@ -17,12 +17,16 @@ function preparaTimer(){
 
 function timer(){
     sec--;
-    if(sec === 0){
+    if(sec <= 0){
         sec = 5;
         min--;
     }
-    if(sec < 10){
+    if(sec < 10 && min < 10){
+        document.getElementById('timer').innerText = "0" + min + ":0" + sec;
+    }else if(sec < 10){
         document.getElementById('timer').innerText = min + ":0" + sec;
+    }else if(min < 10){
+        document.getElementById('timer').innerText = "0" + min + ":" + sec;
     }else{
         document.getElementById('timer').innerText = min + ":" + sec;
     }
