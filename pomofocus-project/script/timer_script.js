@@ -57,6 +57,3 @@ function activeChange(buttonType){
             alert('switch break')
     }
 }
-//short-break-id
-//long-break-id
-//pomodoro-id
