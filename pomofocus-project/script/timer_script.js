@@ -29,8 +29,25 @@ function timer(){
 }
 
 function activeChange(buttonType){
+    clearInterval(tmp);
     document.getElementById('pomodoro-id').className = 'inactive-btn';
     document.getElementById('short-break-id').className = 'inactive-btn';
     document.getElementById('long-break-id').className = 'inactive-btn';
     document.getElementById(buttonType).className = 'active-btn';
+    switch(buttonType){
+        case 'pomodoro-id':
+            document.getElementById('timer').innerText = '45:00'
+            break;
+        case 'short-break-id':
+            document.getElementById('timer').innerText = '05:00'
+            break;
+        case 'long-break-id':
+            document.getElementById('timer').innerText = '15:00'
+            break;
+        default:
+            alert('switch break')
+    }
 }
+//short-break-id
+//long-break-id
+//pomodoro-id
