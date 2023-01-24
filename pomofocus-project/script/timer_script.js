@@ -18,7 +18,7 @@ function preparaTimer(){
 function timer(){
     sec--;
     if(sec === 0){
-        sec = 15;
+        sec = 5;
         min--;
     }
     if(sec < 10){
@@ -26,4 +26,8 @@ function timer(){
     }else{
         document.getElementById('timer').innerText = min + ":" + sec;
     }
+}
+
+function functionBreak(break_tipe){
+    alert(break_tipe);
 }
