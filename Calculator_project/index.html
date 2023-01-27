@@ -20,29 +20,29 @@
             
             <div class="row">
               <button type="button" class="btn btn-dark btn-lg clear font-weight-light" onclick="clearFunction()">C</button>
-              <button type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
-              <button type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="operation('/')">/</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="operation('*')">x</button>
             </div>
 
             <div class="row">
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(7)">7</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(8)">8</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(9)">9</button>
-              <button type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="operation('-')">-</button>
             </div>
             
             <div class="row">
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(4)">4</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(5)">5</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(6)">6</button>
-              <button type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="operation('+')">+</button>
             </div>
 
             <div class="row">
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(1)">1</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(2)">2</button>
               <button type="button" class="btn btn-dark btn-lg font-weight-light" onclick="getNumber(3)">3</button>
-              <button type="button" class="btn btn-dark btn-lg enter">=</button>
+              <button type="button" class="btn btn-dark btn-lg enter" onclick="operation('=')">=</button>
             </div>
 
             <div class="row" style="margin-top: -60px">
