@@ -3,3 +3,7 @@
 
 #primeiro projeto: copia do pomofocus(refeito em 19/01/23)
 https://kalupx.github.io/web_dev_projects/pomofocus-project/pomofocus.html
+
+#segundo projeto: relogio digital para praticar a manipulacao de tempo com BOM
+
+https://kalupx.github.io/web_dev_projects/Relogio-project
