@@ -75,6 +75,12 @@ function cadastrarDespesa(){
         document.getElementById('modal_btn').innerHTML = 'Voltar';
         document.getElementById('modal_btn').className = 'btn btn-success';
         $('#modalRegistraDespesa').modal('show');
+
+        ano.value = '';
+        mes.value = '';
+        dia.value = '';
+        descricao.value = '';
+        valor.value = '';
     }else{
         document.getElementById('modal_titulo').innerHTML = 'Erro na Gravação';
         document.getElementById('modal_itulo_div').className = 'modal-header text-danger';
