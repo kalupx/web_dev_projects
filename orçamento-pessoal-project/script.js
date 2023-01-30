@@ -8,6 +8,27 @@ class Despesa{
         this.valor = valor;
     }
 }
+class Bd
+{
+    constructor(){
+        let id =  localStorage.getItem('id');
+        if(id === null){
+            localStorage.setItem('id', 0);
+        }
+    }
+    getProximoId(){
+        let ProximoId = localStorage.getItem('id');
+        return parseInt(ProximoId) + 1;
+    }
+    gravar(d){
+        let id = this.getProximoId();
+        
+        localStorage.setItem(id, JSON.stringify(d));
+        localStorage.setItem('id', id);
+    }
+}
+
+let bd = new Bd();
 
 function cadastrarDespesa(){
     let ano = document.getElementById('ano');
@@ -26,5 +47,5 @@ function cadastrarDespesa(){
         valor.value
     )
     
-    console.log(despesa)
+    bd.gravar(despesa);
 }
