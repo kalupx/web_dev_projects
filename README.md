@@ -25,6 +25,7 @@ https://kalupx.github.io/web_dev_projects/orçamento-pessoal-project
 <br>
 
 #quinto: landing page finnans para praticar responsividade e bootstrap
+<br>
 https://kalupx.github.io/web_dev_projects/finnans_bootstrap_project
 <br>
 <br>
