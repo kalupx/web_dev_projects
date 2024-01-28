@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomofocus by Kalupx</title>
+    <!--styles-->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/button.css">
+</head>
+<body>
+    <div class="body-container">
+        <div class="header">
+            <div class="left-section">
+                <img id="icon-logo" src="images/icons/icon-white2.png">
+                <p id="title-heaeder">Pomofocus</p>
+            </div>
+            <div class="right-section">
+                <div class="buttons-container">
+                    <button id="report-button">
+                        <img class="button-icon" src="images/icons/graph-white.png">
+                        Report
+                    </button>
+                    <button id="settings-button">
+                        <img class="button-icon" src="images/icons/config-white.png">
+                        Settings
+                    </button>
+                </div>
+                <div class="profile-picture-container">
+                    <img id="profile-pic" src="images/icons/profile-pic.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="clock-container">
+                <div class="controler">
+                    <button class="controler-button" id="active-button">Pomodoro</button>
+                    <button class="controler-button">Short Break</button>
+                    <button class="controler-button">Long Break</button>
+                </div>
+                <div class="clock">25:00</div>
+                <div class="pause-container">
+                    <button class="pause-button" id="pause_button_id">START</button>
+                    <img src="images/icons/next-white3.png">
+                </div>
+            </div>
+            <div class="current-task">
+                <p class="task-number">#1</p>
+                <p class="task-name">Pomofocus Project</p>
+            </div>
+            <div class="task-list-container">
+                <div class="task-list-header">
+                    <p id="task-heaeder-title">Tasks</p>
+                    <button id="three-dots-button">
+                        <img id="three-dots-img" src="images/icons/threedots-white.png">
+                    </button>
+                </div>
+                <div class="task-list">
+                    <button class="task-button">
+                        <div class="left-side-btn">
+                            <div class="check-icon-container">
+                                <img class="check-icon-img" src="images/icons/icon-white2.png">
+                            </div>
+                            <div class="button-task-name">task 1</div>
+                        </div>
+                        <div class="right-side-btn">
+                            <div class="task-counter">0/1</div>
+                            <div class="three-dots-container">
+                                <img class="three-dots-img" src="images/icons/threedots-white.png">
+                            </div>
+                        </div>
+                    </button>
+                    <button class="task-button">
+                        <div class="left-side-btn">
+                            <div class="check-icon-container">
+                                <img class="check-icon-img" src="images/icons/icon-white2.png">
+                            </div>
+                            <div class="button-task-name">task 2</div>
+                        </div>
+                        <div class="right-side-btn">
+                            <div class="task-counter">0/1</div>
+                            <div class="three-dots-container">
+                                <img class="three-dots-img" src="images/icons/threedots-white.png">
+                            </div>
+                        </div>
+                    </button>
+                    <button class="task-button">
+                        <div class="left-side-btn">
+                            <div class="check-icon-container">
+                                <img class="check-icon-img" src="images/icons/icon-white2.png">
+                            </div>
+                            <div class="button-task-name">task 3</div>
+                        </div>
+                        <div class="right-side-btn">
+                            <div class="task-counter">0/1</div>
+                            <div class="three-dots-container">
+                                <img class="three-dots-img" src="images/icons/threedots-white.png">
+                            </div>
+                        </div>
+                    </button>
+                    <button class="add-button">
+                        <div class="add-container">
+                            <img id="plus-circle-img" src="images/icons/plus-circle-white.png" alt="">
+                            Add Task
+                        </div>
+                    </button>                
+                </div>
+                <div class="pomos-counter">
+                    Pomos: <span>7/10</span> Finish At: <span>19:17</span> (1.4h)
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Made by: Kalupx</h1>
+            <h2>finish date: 19/01/2023</h2>
+            <p>
+                Copy of <a href="https://pomofocus.io/" target="blank">Pomofocus.io</a> made with HTML and CSS
+            </p>
+            <p>
+                this project has the sole purpose of practicing knowledge acquired in html and css without purpose of harming the creator of pomofocus.io <a href="https://uzu.works/" target="blank">Yuya Uzu</a>
+            </p>
+            <h1>THIS IS NOT MY PROJECT AND THE ONLY PURPOSE OF ITS EXISTENCE IS TO PRACTICE HTML AND CSS SKILLS</h1>
+            <P>
+                    This web pages isn't working because it doesnt uses a programing language as JavaScript or some framework as React. I dont have a plan to do this to not cause any loss to Yuya  
+            </P>
+            <p>Again, thank you Yuya for the idea. for everyone seeing this, follow him <a href="https://twitter.com/uzu1989" target="blank">Yuya twitter</a> </p>
+        </div>
+    </div>
+    <script src="timer.js"></script>
+    <script src="buttons.js"></script>
+</body>
+</html>
