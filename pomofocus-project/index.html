@@ -38,11 +38,11 @@
         <div class="content">
             <div class="clock-container">
                 <div class="controler">
-                    <button class="controler-button" id="active-button">Pomodoro</button>
-                    <button class="controler-button">Short Break</button>
-                    <button class="controler-button">Long Break</button>
+                    <button class="controler-button" id="active-button" onclick="activateButton(0)">Pomodoro</button>
+                    <button class="controler-button" onclick="activateButton(1)">Short Break</button>
+                    <button class="controler-button" onclick="activateButton(2)">Long Break</button>
                 </div>
-                <div class="clock">25:00</div>
+                <div class="clock">05:00</div>
                 <div class="pause-container">
                     <button class="pause-button" id="pause_button_id">START</button>
                     <img src="images/icons/next-white3.png">

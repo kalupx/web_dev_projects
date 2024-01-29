@@ -1,28 +1,21 @@
-controlerButtons = document.querySelectorAll(".controler-button");
-const clockText = document.querySelector(".clock");
+function activateButton(buttonIndex) {
+    const controlerButtons = document.querySelectorAll(".controler-button");
+    controlerButtons.forEach(button => {
+        button.id = null;
+    });
 
-controlerButtons.forEach(button => {
-    button.addEventListener("click", ()=>{
-        activateButton(button, controlerButtons);
-    })
-});
+    controlerButtons[buttonIndex].id = "active-button";
 
-function activateButton(button, controlerButtons){
-    controlerButtons.forEach((btn) => {
-        if(btn.innerText === button.innerText){
-            btn.id = "active-button";
-        }else{
-            btn.id = null;
-        }
-    })
-
-    let timerMode = document.querySelector("#active-button").innerText;
-    console.log(document.getElementsByClassName("clock"))
-    if(timerMode === "Pomodoro"){
-        clockText.innerText = "25:00";
-    }else if(timerMode === "Short Break"){
-        clockText.innerText = "05:00";
+    if(buttonIndex === 0){
+        renderFunction("05:00");
+    }else if(buttonIndex === 1){
+        renderFunction("02:00");
     }else{
-        clockText.innerText = "15:00";
+        renderFunction("03:00");
     }
+}
+
+function renderFunction(timeToRender){
+    clock = document.querySelector(".clock");
+    clock.innerText = timeToRender;
 }
